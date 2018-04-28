@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.taotao</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <artifactId>taotao-parent</artifactId>
+    </parent>
+    <artifactId>taotao-manager</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>taotao-manager</name>
+    <description>manager</description>
+
+    <modules>
+        <module>taotao-manager-pojo</module>
+        <module>taotao-manger-mapper</module>
+        <module>taotao-manager-service</module>
+        <module>taotao-mangager-web</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.taotao</groupId>
+            <artifactId>taotao-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--pagehelper-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
